@@ -1,0 +1,17 @@
+package practicas;
+
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MarcoDialogos extends JFrame {
+
+	public MarcoDialogos() {
+		setTitle("Prueba de diálogos");
+		setBounds(500, 300, 600, 450);
+		JPanel laminaCuadricula = new JPanel();
+		laminaCuadricula.setLayout(new GridLayout(2, 3));
+	}
+	
+}

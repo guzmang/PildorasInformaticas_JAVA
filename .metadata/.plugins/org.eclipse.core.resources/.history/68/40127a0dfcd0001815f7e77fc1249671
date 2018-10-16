@@ -1,0 +1,41 @@
+package conectaBD;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ConectaPruebas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			
+		// 1. CREAR CONEXIÓN
+			
+			// Para ver el host y puerto:
+			// SHOW VARIABLES WHERE VARIABLE_NAME IN ('hostname', 'port')
+			Connection miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pruebas", "root", "");
+			
+		// 2. CREAR OBJETO STATEMENT
+			
+			Statement miStatement = miConexion.createStatement();
+			
+		// 3. EJECUTAR SQL
+			
+			ResultSet miResultSet = miStatement.executeQuery("SELECT * FROM PRODUCTOS");
+			
+		// 4. RECORRER EL RESULTSET
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

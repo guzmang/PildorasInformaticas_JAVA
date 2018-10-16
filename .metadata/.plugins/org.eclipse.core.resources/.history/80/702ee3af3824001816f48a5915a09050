@@ -1,0 +1,39 @@
+package graficos;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class VariosOyentes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoPrincipal marco = new MarcoPrincipal();
+		marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+
+class MarcoPrincipal extends JFrame {
+
+	public MarcoPrincipal() {
+		setTitle("Prueba varios");
+		setBounds(1300, 100, 300, 200);
+		LaminaPrincipal lamina = new LaminaPrincipal();
+		add(lamina);
+	}
+	
+}
+
+class LaminaPrincipal extends JPanel {
+	
+	public LaminaPrincipal() {
+		JButton btnNuevo = new JButton("Nuevo");
+		add(btnNuevo);
+		btnCerrar = new JButton("Cerrar");
+		add(btnCerrar);
+	}
+	
+	JButton btnCerrar;
+	
+}

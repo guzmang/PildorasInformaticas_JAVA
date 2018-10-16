@@ -1,0 +1,145 @@
+package chat;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class Cliente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		MarcoCliente miMarco = new MarcoCliente();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+
+class MarcoCliente extends JFrame {
+	
+	public MarcoCliente() {	
+		setBounds(600, 300, 280, 350);
+		LaminaMarcoCliente miLamina = new LaminaMarcoCliente();
+		add(miLamina);
+		setVisible(true);
+	}
+
+}
+
+class LaminaMarcoCliente extends JPanel implements Runnable {
+	
+	public LaminaMarcoCliente() {
+		nick = new JTextField(5);
+		add(nick);
+		JLabel texto = new JLabel("-CHAT-");
+		add(texto);
+		ip = new JTextField(8);
+		add(ip);
+		campoChat = new JTextArea(12, 20);
+		add(campoChat);
+		campo1 = new JTextField(20);
+		add(campo1);
+		miBoton = new JButton("Enviar");
+		EnviaTexto miEvento = new EnviaTexto();
+		miBoton.addActionListener(miEvento);
+		add(miBoton);
+		Thread miHilo = new Thread(this);
+		miHilo.start();
+	}
+	
+	private class EnviaTexto implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			try {
+				// Direccion de IP del servidor y puerto en el constructor del socket
+				Socket miSocket = new Socket("192.168.0.9", 9999);
+				PaqueteEnvio datos = new PaqueteEnvio();
+				datos.setNick(nick.getText());
+				datos.setIp(ip.getText());
+				datos.setMensaje(campo1.getText());
+				ObjectOutputStream paqueteDatos = new ObjectOutputStream(miSocket.getOutputStream());
+				paqueteDatos.writeObject(datos);
+				miSocket.close();
+			} catch (UnknownHostException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				// IP mal, ocupada, congestion en la red y tarde en contestar, etc
+				System.out.println(e1.getMessage());
+			}
+		}
+		
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		try {
+			ServerSocket servidorCliente = new ServerSocket(9090);
+			Socket cliente;
+			PaqueteEnvio paqueteRecibido;
+			while(true) {
+				cliente = servidorCliente.accept();
+				ObjectInputStream flujoEntrada = new ObjectInputStream(cliente.getInputStream());
+				paqueteRecibido = (PaqueteEnvio) flujoEntrada.readObject();
+				campoChat.append(paqueteRecibido.getNick() + ": " + paqueteRecibido.getMensaje() + "\n");
+			}
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.getMessage();
+		}
+		
+	}
+	
+	private JTextField campo1, nick, ip;
+	private JTextArea campoChat;
+	private JButton miBoton;
+	
+}
+
+class PaqueteEnvio implements Serializable {
+
+	public String getNick() {
+		return nick;
+	}
+
+	public void setNick(String nick) {
+		this.nick = nick;
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
+	public String getMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+	
+	private String nick, ip, mensaje;
+	
+}

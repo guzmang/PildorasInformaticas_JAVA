@@ -1,0 +1,30 @@
+package graficos;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PruebaAcciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoAccion miMarco = new MarcoAccion();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		miMarco.setVisible(true);
+	}
+
+}
+
+class MarcoAccion extends JFrame {
+	
+	public MarcoAccion() {
+		setTitle("Prueba Acciones");
+		setBounds(600, 350, 600, 300);
+		PanelAccion lamina = new PanelAccion();
+		add(lamina);
+	}
+	
+}
+
+class PanelAccion extends JPanel {
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Excepciones1&apos; to &apos;excepciones1&apos;&#x0D;&#x0A;- Original project: &apos;Excepciones&apos;&#x0D;&#x0A;- Original element: &apos;Excepciones/src/Excepciones1&apos;&#x0D;&#x0A;- Renamed element: &apos;Excepciones/src/excepciones1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Excepciones1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Excepciones1" name="excepciones1" qualified="false" references="true" stamp="1522120867093" textual="false" version="1.0"/>
+</session>

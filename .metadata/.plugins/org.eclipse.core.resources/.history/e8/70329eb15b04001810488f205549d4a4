@@ -1,0 +1,21 @@
+
+public class Declaraciones_Operadores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final double apulgadas = 2.54;
+		int a = 5;
+		int b;
+		b = 7;
+		int c = b + a;
+		System.out.println("c: " + c);
+		System.out.println("c++ " + c++);
+		System.out.println("++c " + ++c);
+		System.out.println(c+=6);
+		int d = 4;
+		int e = 10;
+		double f = e/d;
+		System.out.println(f); // 2.0, d y e deben ser doubles tambien
+	}
+
+}
