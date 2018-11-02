@@ -1,0 +1,46 @@
+package conectaBD;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ModificaBBDD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			
+		// 1. CREAR CONEXIÓN
+			
+			Connection miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pruebas?autoReconnect=true&useSSL=false", "root", "");
+			
+		// 2. CREAR OBJETO STATEMENT
+			
+			Statement miStatement = miConexion.createStatement();
+			
+		// 3. EJECUTAR SQL
+			
+			// Ver en la API de Java los distintos metodos get, dependiendo el tipo 
+			// que tenga la columna de la tabla
+			ResultSet miResultSet = miStatement.executeQuery("SELECT * FROM PRODUCTOS");
+			
+		// 4. RECORRER EL RESULTSET
+			
+			while(miResultSet.next()) {
+				System.out.println(miResultSet.getString("CÓDIGOARTÍCULO") + "\t"
+						+ miResultSet.getString("NOMBREARTÍCULO") + " - "
+						+ miResultSet.getString("PRECIO"));
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("NO CONECTA!!");
+			e.printStackTrace();
+		}
+		
+	}
+
+}

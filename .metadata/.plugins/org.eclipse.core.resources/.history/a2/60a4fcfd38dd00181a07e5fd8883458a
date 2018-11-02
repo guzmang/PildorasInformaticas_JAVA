@@ -1,0 +1,10 @@
+package modelo;
+
+public class Productos {
+
+	private String nArticulo;
+	private String seccion;
+	private String precio;
+	private String pOrigen;
+	
+}

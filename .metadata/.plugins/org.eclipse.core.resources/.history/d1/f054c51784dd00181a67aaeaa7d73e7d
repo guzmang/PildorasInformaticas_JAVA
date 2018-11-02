@@ -1,0 +1,46 @@
+package modelo;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import controlador.Conexion;
+
+public class CargaSecciones {
+
+	public CargaSecciones() {
+		miConexion = new Conexion();
+	}
+	
+	public String ejecutaConsultas() {
+		
+		Productos miProducto = null;
+		Connection accesoBBDD = miConexion.dameConexion();
+		
+		try {
+			Statement secciones = accesoBBDD.createStatement();
+			rs = secciones.executeQuery("SELECT DISTINCTROW SECCIÓN FROM PRODUCTOS");
+			accesoBBDD.close();
+			
+			while(rs.next()) {
+				miProducto = new Productos();
+				miProducto.setSeccion(rs.getString(1));
+				return miProducto.getSeccion();
+			}
+			
+			rs.close();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return miProducto.getSeccion();
+		
+	}
+	
+	private Conexion miConexion;
+	private ResultSet rs;
+	
+}

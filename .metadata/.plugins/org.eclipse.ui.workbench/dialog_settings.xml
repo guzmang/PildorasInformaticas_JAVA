@@ -16,6 +16,20 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item value="0" key="sort"/>
+		<item value="false" key="allPersp"/>
+		<list key="columns">
+			<item value="252"/>
+			<item value="504"/>
+		</list>
+		<list key="bounds">
+			<item value="284"/>
+			<item value="0"/>
+			<item value="798"/>
+			<item value="553"/>
+		</list>
+	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
 		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>

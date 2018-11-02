@@ -1,0 +1,11 @@
+package modelo;
+
+public class EjecutaConsultas {
+
+	public String filtraBBDD() {
+		
+	}
+	
+	private String prueba;
+	
+}

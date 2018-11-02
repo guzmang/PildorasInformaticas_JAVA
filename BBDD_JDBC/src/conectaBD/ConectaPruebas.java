@@ -47,6 +47,10 @@ public class ConectaPruebas {
 //						+ miResultSet.getString(4));
 			}
 			
+		// 5. LIBERAR MEMORIA
+			
+			miResultSet.close();
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("NO CONECTA!!");

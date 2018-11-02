@@ -1,0 +1,9 @@
+¿Que es Modelo Vista Controlador?
+
+Es un patron de arquitectura que separa la logica del programa (datos), de la interfaz de usuario (ventanas) y las comunicaciones (eventos).
+
+¿Que ventajas tiene esto?
+- Modularizacion del programa.
+- Reutilizacion de codigo.
+- Mayor facilidad en el desarrollo.
+- Mayor facilidad de mantenimiento.

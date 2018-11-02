@@ -1,0 +1,44 @@
+package modelo;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class EjecutaConsultas {
+
+	public EjecutaConsultas() {
+		miConexion = new Conexion();
+	}
+	
+	public String filtraBBDD(String seccion, String pais) {
+		
+		Connection conecta = miConexion.dameConexion();
+		rs = null;
+		
+		try {
+			
+			if(!seccion.equals("Todos") && pais.equals("Todos")){
+				enviaConsultaSeccion = conecta.prepareStatement(consultaSeccion);
+				enviaConsultaSeccion.setString(1, seccion);
+			} else if(seccion.equals("Todos") && !pais.equals("Todos")){
+
+			} else if(!seccion.equals("Todos") && !pais.equals("Todos")){
+
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	private Conexion miConexion;
+	private ResultSet rs;
+	private PreparedStatement enviaConsultaSeccion;
+
+	private final String consultaSeccion = "SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN"
+			+ " FROM PRODUCTOS WHERE SECCIÓN=?";
+	
+}
