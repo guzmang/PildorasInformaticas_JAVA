@@ -1,0 +1,10 @@
+package procAlmacenado;
+
+public class ConsultaClientes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

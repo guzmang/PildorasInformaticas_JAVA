@@ -1,0 +1,10 @@
+package metadatos;
+
+public class InfoMetadatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+- Una transaccion es una unidad de trabajo: varias instrucciones SQL DML (Data Manipulation Language) trabajando en grupo.
+
+- Las transacciones garantizan en una BBDD las caracteristicas ACID:
+
+1) Atomicidad -> O todo o nada
+2) Consistencia -> Integridad de los datos
+3) Aislamiento
+4) Durabilidad
+
+- Metodos en una aplicacion Java:
+
+1) setAutoCommit(); -> Por default true, es decir que cada instruccion SQL se trata de forma individual (si es false, le decimos que las instrucciones SQL de la aplicacion podrian ser tratadas como bloque).
+2) commit(); -> Confirma el bloque de instrucciones o transaccion.
+3) rollBack(); -> Garantiza la integridad de los datos, revirtiendo todos los cambios hasta ese momento antes de comenzar la transaccion si es que falla algo.

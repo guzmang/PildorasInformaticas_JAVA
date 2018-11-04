@@ -1,0 +1,17 @@
+Metadatos, útiles para aplicaciones genéricas en las que seremos capaces de conectarnos con cualquier gestor de BBDD y consultar en cualquier tabla almacenada en dentro de ese gestor de BBDD:
+
+- Datos que describen la BBDD o alguna de sus partes.
+
+- 3 clases de metadatos:
+1) Relativos a la BBDD:
+	- Gestor de BBDD
+	- Versión del gestor
+	- Driver de conexión a BBDD
+	- Versión del driver
+2) Relativos a un conjunto de resultados (ResultSet):
+	- Nombres de las tablas
+	- Nombres de los campos de las tablas
+	- Tipo de datos de los campos
+	- Propiedades de los campos
+3) Relativos a parámetros de sentencias preparadas
+

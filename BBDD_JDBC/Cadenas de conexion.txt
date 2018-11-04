@@ -1,0 +1,14 @@
+jdbc -> driver
+mysql -> protocolo driver
+//localhost...gestionPedidos -> detalles de la conexion del driver
+
+---------------------------------------------------------
+
+MySQL
+jdbc:mysql://localhost:9999/gestionPedidos
+
+Microsoft SQL Server
+jdbc:odbc:DSN_gestionPedidos
+
+ORACLE
+jdbc:oracle:juan@servidor:9999:gestionPedidos
