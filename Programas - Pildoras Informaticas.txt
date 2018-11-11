@@ -583,12 +583,18 @@ Curso Java. Acceso a BBDD JDBC XXII. Metadatos I. Vídeo 222
 Curso Java. Acceso a BBDD JDBC XXIII Metadatos II. Vídeo 223
 (BBDD_JDBC/src/metadatos) InfoMetadatos.java
 Curso Java. Acceso a BBDD JDBC XXIV. Ejercicio práctico I. Vídeo 224
-
+(BBDD_JDBC/src/aplicacionFinal) AplicacionUniversal.java
 Curso Java. Acceso a BBDD. JDBC XXV Ejercicio práctico II. Vídeo 225
+(BBDD_JDBC/src/aplicacionFinal) AplicacionUniversal.java
 Curso Java. Acceso a BBDD JDBC XXVI Ejercicio práctico III. Vídeo 226
+(BBDD_JDBC/src/aplicacionFinal) AplicacionUniversal.java
+(BBDD_JDBC/src/aplicacionFinal) datos_config.txt
 Curso Java. Acceso a BBDD JDBC XXVII Ejercicio práctico IV. Vídeo 227
-
+(BBDD_JDBC/src/aplicacionFinal) AplicacionUniversal.java
+(BBDD_JDBC/src/aplicacionFinal) EjemploAbrirArchivo.java
+(BBDD_JDBC/src/aplicacionFinal) datos_config.config
 Curso Java. JSP I. Vídeo 228
+
 Curso Java. JSP II. Vídeo 229
 Curso Java. JSP III. Vídeo 230
 Curso Java. JSP IV. Vídeo 231

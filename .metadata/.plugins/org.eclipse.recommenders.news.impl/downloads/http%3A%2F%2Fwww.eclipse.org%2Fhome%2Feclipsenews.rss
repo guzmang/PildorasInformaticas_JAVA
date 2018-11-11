@@ -9,6 +9,30 @@
       <title>eclipse.org</title>
       <link>http://www.eclipse.org</link>
     </image>
+    <item>
+      <title><![CDATA[Eclipse Foundation Updating Contributor and Committer Agreements]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/mike-milinkovich/new-eclipse-foundation-committer-and-contributor-agreements]]></link>
+      <description><![CDATA[See Mike Milinkovich's blog explaining the upcoming changes to these agreements and what steps are being taken to implement the update]]></description>
+      <pubDate>Mon, 05 Nov 2018 14:15:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
+    <item>
+      <title><![CDATA[Eclipse Foundation Publishes MicroProfile eBook]]></title>
+      <link><![CDATA[http://globenewswire.ca/news-release/2018/11/05/1644913/0/en/Eclipse-Foundation-Publishes-MicroProfile-eBook.html]]></link>
+      <description><![CDATA[15 page executive guide sets context for enterprises evaluating MicroProfile & enterprise Java microservices for digital transformation]]></description>
+      <pubDate>Mon, 05 Nov 2018 11:00:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
+    <item>
+      <title><![CDATA[Participate in the 2018 Eclipse Foundation Brand Survey]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/thabang-mashologu/participate-2018-eclipse-foundation-brand-survey]]></link>
+      <description><![CDATA[We are excited to launch the 2018 edition of our brand survey!]]></description>
+      <pubDate>Mon, 05 Nov 2018 10:45:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
      <item>
       <title><![CDATA[Case Study: How Bosch Is Succeeding with Open Source at Eclipse IoT]]></title>
       <link><![CDATA[https://mmilinkov.wordpress.com/2018/10/02/how-bosch-is-succeeding-with-open-source/]]></link>

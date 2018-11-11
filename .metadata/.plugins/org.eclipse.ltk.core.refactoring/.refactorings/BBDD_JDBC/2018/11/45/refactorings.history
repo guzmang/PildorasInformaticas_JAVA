@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;datos_config.txt&apos; to &apos;BBDD_JDBC/src/aplicacionFinal&apos;&#x0D;&#x0A;- Original project: &apos;BBDD_JDBC&apos;&#x0D;&#x0A;- Destination element: &apos;BBDD_JDBC/src/aplicacionFinal&apos;&#x0D;&#x0A;- Original element: &apos;datos_config.txt&apos;" description="Copy file" destination="/src&lt;aplicacionFinal" element1="src/aplicacionFinal/datos_config.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1541958312586" units="0" version="1.0"/>
+</session>
