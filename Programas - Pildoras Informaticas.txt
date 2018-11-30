@@ -594,20 +594,43 @@ Curso Java. Acceso a BBDD JDBC XXVII Ejercicio práctico IV. Vídeo 227
 (BBDD_JDBC/src/aplicacionFinal) EjemploAbrirArchivo.java
 (BBDD_JDBC/src/aplicacionFinal) datos_config.config
 Curso Java. JSP I. Vídeo 228
-
+Carpeta Servers
 Curso Java. JSP II. Vídeo 229
+(PrimerosPasosJSP/WebContent) saludo.jsp
 Curso Java. JSP III. Vídeo 230
+(PrimerosPasosJSP/WebContent) ejemploExpresiones.jsp
+(PrimerosPasosJSP/WebContent) ejemploScriptlets.jsp
+(PrimerosPasosJSP/WebContent) ejemploDeclaraciones.jsp
 Curso Java. JSP IV. Vídeo 231
+(PrimerosPasosJSP/WebContent) calculo.jsp
+(PrimerosPasosJSP/src/pildorasinformaticas.com.calculosMatematicos) Calculos.java
 Curso Java. JSP V. Vídeo 232
+(PrimerosPasosJSP/WebContent) ejemploObjetos.jsp
 Curso Java. JSP VI. Vídeo 233
+(PrimerosPasosJSP/WebContent) registro.html
+(PrimerosPasosJSP/WebContent) registro.jsp
+(PrimerosPasosJSP/WebContent) registroPersonas.jsp
+(PrimerosPasosJSP/WebContent) fecha.jsp
 Curso Java. JSP VII. Vídeo 234
+(PrimerosPasosJSP/WebContent) formularioRegistro.html
+(PrimerosPasosJSP/WebContent) recogeDatos.jsp
 Curso Java. JSP VIII. Vídeo 235
+(PrimerosPasosJSP/WebContent) recogeDatos.jsp
 Curso Java. JSP IX. Vídeo 236
+(PrimerosPasosJSP/WebContent) formularioLogin.html
+(PrimerosPasosJSP/WebContent) compruebaUsuario.jsp
 Curso Java. JSP X. Sesiones I. Vídeo 237
+(PrimerosPasosJSP/WebContent) listaCompra.jsp
 Curso Java. JSP XI Sesiones II. Vídeo 238
+(PrimerosPasosJSP/WebContent) listaCompra.jsp
 Curso Java. JSP XII Cookies I. Vídeo 239
+(PrimerosPasosJSP/WebContent) formularioEnvioPreferenciasViaje.html
 Curso Java. JSP XIII Cookies II. Vídeo 240
+(PrimerosPasosJSP/WebContent) formularioEnvioPreferenciasViaje.html
+(PrimerosPasosJSP/WebContent) recibePeticion.jsp
+(PrimerosPasosJSP/WebContent) agenciaViajes.jsp
 Curso Java. JSP XIV JSP Tags I. Vídeo 241
+
 Curso Java. JSP XV. JSP Tags II. Vídeo 242
 Curso Java. JSP XVI. JSP Tags III. Vídeo 243
 Curso Java. JSP XVII JSP Tags IV. Vídeo 244

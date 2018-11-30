@@ -1,0 +1,20 @@
+<html>
+	<!-- con esta etiqueta me reconoce los caracteres latinos (ej: vocales con tildes) -->
+	<meta charset="utf-8">
+	<body>
+		<h2>Formulario de Registro</h2>
+		
+		<!-- apuntamos al archivo a donde enviaremos los datos -->
+		<form action="registro.jsp">
+		
+			<!-- se debe nombrar cada uno de los campos del formulario con el -->
+			<!-- objetivo de hacer referencia a este nombre en el archivo jsp -->
+			<!-- y asi poder rescatar los datos -->
+			
+			Nombre: <input type="text" name="nombre"><br><br>
+			Apellido: <input type="text" name="apellido"><br><br>
+			
+			<input type="submit" value="Registrar">
+		</form>
+	</body>
+</html>

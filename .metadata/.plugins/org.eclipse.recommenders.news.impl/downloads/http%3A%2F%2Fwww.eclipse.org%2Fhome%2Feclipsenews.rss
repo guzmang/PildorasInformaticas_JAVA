@@ -9,6 +9,22 @@
       <title>eclipse.org</title>
       <link>http://www.eclipse.org</link>
     </image>
+     <item>
+      <title><![CDATA[Eclipse Foundation Specification Process, Part I: The EDP]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/wayne-beaton/eclipse-foundation-specification-process-part-i-edp]]></link>
+      <description><![CDATA[A quick Eclipse Development Process (EDP) primer.]]></description>
+      <pubDate>Thu, 08 Nov 2018 11:15:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
+    <item>
+      <title><![CDATA[Eclipse Foundation Hosted Services Privacy and Acceptable Usage Policy]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/christopher-guindon/eclipse-foundation-hosted-services-privacy-and-acceptable-usage-policy]]></link>
+      <description><![CDATA[The Eclipse Foundation recently made available a new policy to make sure that our projects and hosted services are compliant with the General Data Protection Regulation (GDPR).]]></description>
+      <pubDate>Thu, 08 Nov 2018 11:15:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
     <item>
       <title><![CDATA[Eclipse Foundation Updating Contributor and Committer Agreements]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/mike-milinkovich/new-eclipse-foundation-committer-and-contributor-agreements]]></link>
