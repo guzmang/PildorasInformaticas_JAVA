@@ -1,7 +1,7 @@
 <%@ page import="java.util.*" %>
 <html>
 	<body>
-		<form name="Formulario_Compra" action="listaCompra.jsp">
+		<form name="formularioCompra" action="listaCompra.jsp">
  			<p>Artículos a comprar:</p>
 			<p>
 			    <label><input type="checkbox" name="articulos" value="agua">
